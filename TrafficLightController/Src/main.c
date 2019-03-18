@@ -58,7 +58,7 @@ static void MX_GPIO_Init(void);
 /* USER CODE BEGIN 0 */
 int fputc(int ch, FILE *f)
 {
-		return ITM_SenderChar(ch);
+		return ITM_SendChar(ch);
 }
 /* USER CODE END 0 */
 
@@ -101,7 +101,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		printf("Hello, worlf\n");
+		printf("Hello, world\n");
 		HAL_Delay(1000);
   }
   /* USER CODE END 3 */
