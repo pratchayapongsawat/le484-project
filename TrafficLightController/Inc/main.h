@@ -58,12 +58,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define MODE_SW_Pin GPIO_PIN_3
+#define MIN_GREEN_SW_Pin GPIO_PIN_3
+#define MIN_GREEN_SW_GPIO_Port GPIOE
+#define WALK_INTERVAL_SW_Pin GPIO_PIN_4
+#define WALK_INTERVAL_SW_GPIO_Port GPIOE
+#define MODE_SW_Pin GPIO_PIN_5
 #define MODE_SW_GPIO_Port GPIOE
-#define WALK_INTERVAL_Pin GPIO_PIN_4
-#define WALK_INTERVAL_GPIO_Port GPIOE
-#define OUT_OF_SERVICE_Pin GPIO_PIN_5
-#define OUT_OF_SERVICE_GPIO_Port GPIOE
 #define YELLOW_LAMP_Pin GPIO_PIN_2
 #define YELLOW_LAMP_GPIO_Port GPIOC
 #define GREEN_LAMP_Pin GPIO_PIN_4
@@ -81,6 +81,7 @@ void Error_Handler(void);
 #define DONT_WALK_Pin GPIO_PIN_13
 #define DONT_WALK_GPIO_Port GPIOD
 /* USER CODE BEGIN Private defines */
+#define DEAD_PERIOD 2
 
 /* USER CODE END Private defines */
 
